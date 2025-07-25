@@ -35,3 +35,29 @@ Incluye los notebooks responsables de extraer, transformar y cargar los datos en
 ### 📈 Reporte de Visualización
 
 Contiene el notebook con las respuestas visuales a las preguntas planteadas a partir de la bodega de datos, utilizando herramientas gráficas y análisis interpretativo.
+
+---
+## 📖ℹ️ Instrucciones
+
+Antes de ejecutar los notebooks, asegurese de crear el archivo `config.yml` en la carpeta `notebooks`, el archivo debe tener la siguiente estructura: 
+
+```
+fuente:
+  driver: postgresql
+  db: "NOMBRE DA LA BASE DE DATOS DE ORIGEN (OLTP)"
+  user: "INGRESA TU USUARIO DE POSTGRES"
+  password: "INGRESA TU CONTRASEÑA"
+  host: localhost
+  port: 5432
+
+bodega:
+  driver: postgresql
+  db: "NOMBRE DA LA BASE DE DATOS DESTINO (OLAP)"
+  user: "INGRESA TU USUARIO DE POSTGRES"
+  password: "INGRESA TU CONTRASEÑA"
+  host: localhost
+  port: 5432
+```
+
+
+
